@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Exercice_8</title>
+    <title>Exercice_7</title>
     <meta charset="UTF-8">
 </head>
 <body>
-
+<form name="form1">
+    <label for="pointure">Pointure: </label>
+    <input type="text" id="pointure" name="pointure" value="">
+    <label for="date_naissance">Année de naissance: </label>
+    <input type="text" id="date_naissance" name="date_naissance" value="">
+    <button id="valider" name="valider" onClick="controle(form1)">Valider</button>
+</form>
+<script>
+    function controle(form1){
+        var x=form1.pointure.value;
+        var y=form1.date_naissance.value;
+        alert ((((x*2)+5)*50)-y)+1766
+    }
+</script>
 </body>
 </html>

@@ -5,12 +5,19 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <form>
+        <form name="form1">
             <label for="premier_nombre">Premier nombre : </label>
             <input type="text" id="premier_nombre" name="premier_nombre" value=""/>
             <label for="deuxieme_nombre">Deuxième nombre : </label>
             <input type="text" id="deuxieme_nombre" name="deuxieme_nombre" value=""/>
-            <button id="valider" name ="valider">Valider</button>
+            <button id="valider" name ="valider" onclick="controle(form1)">Valider</button>
         </form>
+        <script>
+            function controle(form1){
+                var nombre=document.form1.premier_nombre.value;
+                var nombre1=document.form1.deuxieme_nombre.value;
+                alert((nombre/0)*nombre1);
+            }
+        </script>
     </body>
 </html>

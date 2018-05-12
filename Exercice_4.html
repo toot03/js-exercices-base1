@@ -5,6 +5,22 @@
         <meta charset="UTF-8">
     </head>
     <body>
-
+    <form name="form1">
+        <label for="nom">Nom : </label>
+        <input type="text" name="nom" id="nom" value=""/>
+        <label for="prenom">Prénom : </label>
+        <input type="text" name="prenom" id="prenom" value=""/>
+        <label for="ville">Ville : </label>
+        <input type="text" name="ville" id="ville"  value=""/>
+        <button  name="valider" id="valider" onClick="controle(form1)">Valider</button>
+    </form>
+    <script text="text/javascript">
+        function controle(form1){
+            var test1=document.form1.nom.value;
+            var test2=document.form1.prenom.value;
+            var test3=document.form1.ville.value;
+            alert("Bonjour:"+"\n"+test1+"\n"+test2+" de \n"+test3);
+        }
+    </script>
     </body>
 </html>
